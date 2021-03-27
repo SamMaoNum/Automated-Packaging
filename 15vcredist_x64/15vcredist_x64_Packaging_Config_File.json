@@ -1,0 +1,700 @@
+{
+    "JsonConfigVersion": 2.0,
+    "PackagingNotes": [
+        "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe"
+    ],
+    "ProjectSettings": {
+        "ProjectName": "15vcredist_x64",
+        "ProjectDescription": "15vcredist_x64",
+        "ProjectIconFile": "",
+        "ProjectFileName": "",
+        "ProjectFolder": "c:\\NIP_software\\15vcredist_x64\\output\\",
+        "TargetCommand": {
+            "CommandLine": "null",
+            "WorkingFolder": ""
+        },
+        "TargetOS": [
+            "Win7-x64",
+            "Win8-x64"
+        ]
+    },
+    "PreCaptureCommands": [],
+    "CaptureSettings": {
+        "CaptureTimeoutSec": 100,
+        "CaptureAllProcesses": false,
+        "IgnoreChangesUnderInstallerPath": true,
+        "ReplaceRegistryShortPaths": true,
+        "RegistryExclusions": [
+            " HKEY_USERS\\.DEFAULT",
+            " HKEY_LOCAL_MACHINE\\SYSTEM",
+            " HKEY_CURRENT_USER",
+	    " HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+            " HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing"
+        ],
+        "FileExclusions": [
+			"%SystemDrive%\\{934c9ac8-0a5d-4f14-b509-689c2fba9604}",
+		"%programData%\\Package Cache",
+            "%winDir%\\Installer\\*.msi",
+            "%windir%\\System32\\Sysprep",
+			"%programdata%\\Microsoft\\Windows\\wfp",
+		"%programdata%\\Package Cache",
+            "%Windir%\\Microsoft.NET\\Framework64\\v4.0.30319\\ngen.log"
+        ],
+        "ProcessExclusions": [],
+        "ProcessInclusions": {
+            "IncludeChildProccesses": true,
+            "Include": []
+        }
+    },
+    "InstallerDownload": {
+        "DownloadURL": "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe",
+        "DownloadPath": "C:\\NIP_software\\15vcredist_x64\\Installer_cfg\\15vcredist_x64.exe",
+        "SHA-256": "5EEA714E1F22F1875C1CB7B1738B0C0B1F02AEC5ECB95F0FDB1C5171C6CD93A3"
+    },
+    "CaptureCommands": {
+        "Enabled": true,
+        
+            "InstallerPrefix": "",
+            "InstallerPath": "c:\\NIP_software\\15vcredist_x64\\Installer_Cfg\\15vcredist_x64.exe",
+            "InstallerCommands": " /q /norestart",
+            "PostInstallActions": {
+                "Enabled": false,
+                "Commands": []
+            },
+            "DebugMode": true
+        },
+        "ModifyAssets": {
+            "AddFiles": {},
+            "ModifyKeys": {}
+        },
+        "VirtualizationSettings": {
+            "DefaultDispositionLayer": 3,
+            "DefaultServiceVirtualizationAction": "Register",
+            "FileDispositionLayers": {
+                "Vc13x64_1": {
+                    "Path": "%CommonProgramFiles%\\Microsoft Shared\\VC",
+                    "Layer": 4,
+                    "Recurse": true
+                },
+                "Vc13x64_2": {
+                    "Path": "%CommonProgramFiles(X86)%\\Microsoft Shared\\VC",
+                    "Layer": 4,
+                    "Recurse": true
+                },
+                "Vc13x64_3": {
+                    "Path": "%Windir%\\Installer\\SourceHash{0D3E9E15-DE7A-300B-96F1-B4AF12B96488}",
+                    "Layer": 4,
+                    "Recurse": true
+                },
+				"Vc13x64_31": {
+                    "Path": "%Windir%\\Installer\\SourceHash{BC958BD2-5DAC-3862-BB1A-C1BE0790438D}",
+                    "Layer": 4,
+                    "Recurse": true
+                },
+				"Vc13x64_4": {
+                    "Path": "%Windir%\\system32\\concrt140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_5": {
+                    "Path": "%Windir%\\system32\\mfc140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_6": {
+                    "Path": "%Windir%\\system32\\mfc140chs.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_7": {
+                    "Path": "%Windir%\\system32\\mfc140cht.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_8": {
+                    "Path": "%Windir%\\system32\\mfc140deu.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+				"Vc13x64_41": {
+                    "Path": "%Windir%\\system32\\mfc140enu.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_51": {
+                    "Path": "%Windir%\\system32\\mfc140esn.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_61": {
+                    "Path": "%Windir%\\system32\\mfc140fra.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_71": {
+                    "Path": "%Windir%\\system32\\mfc140ita.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_81": {
+                    "Path": "%Windir%\\system32\\mfc140jpn.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+				"Vc13x64_411": {
+                    "Path": "%Windir%\\system32\\mfc140kor.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_511": {
+                    "Path": "%Windir%\\system32\\mfc140rus.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_611": {
+                    "Path": "%Windir%\\system32\\mfc140u.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_711": {
+                    "Path": "%Windir%\\system32\\mfcm140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_811": {
+                    "Path": "%Windir%\\system32\\mfcm140u.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+				"Vc13x64_6111": {
+                    "Path": "%Windir%\\system32\\msvcp140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_7111": {
+                    "Path": "%Windir%\\system32\\vcruntime140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_8111": {
+                    "Path": "%Windir%\\system32\\vcamp140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+				"Vc13x64_81111": {
+                    "Path": "%Windir%\\system32\\vcomp140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+				"Vc13x64_71111": {
+                    "Path": "%Windir%\\system32\\vccorlib140.dll",
+                    "Layer": 4,
+                    "Recurse": false
+                },
+                "Vc13x64_9": {
+                    "Path": "%Windir%\\WinSxS\\Catalogs",
+                    "Layer": 4,
+                    "Recurse": true
+                },
+                "Vc13x64_10": {
+                    "Path": "%Windir%\\WinSxS\\Manifests",
+                    "Layer": 4,
+                    "Recurse": true
+                }
+            },
+            "RegistryDispositionLayers": {
+				"31401":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\2DB859CBCAD52683BBA11CEB700934D8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"31402":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\51E9E3D0A7EDB003691F4BFA219B4688",
+					"Layer": 4,
+					"Recurse": false
+				},				
+				"10D3E9E15DE7A300B96F1B4AF12B96488":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{0D3E9E15-DE7A-300B-96F1-B4AF12B96488}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"2BC958BD25DAC3862BB1AC1BE0790438D":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{BC958BD2-5DAC-3862-BB1A-C1BE0790438D}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"3140":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"4RuntimeMinimum":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeMinimum",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"5RuntimeAdditional":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeAdditional",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"6e46eca4f393b40df9f49076faf788d83":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{e46eca4f-393b-40df-9f49-076faf788d83}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"7SharedDlls":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\SharedDlls",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"8x64":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\x64",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"9140":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"10RuntimeMinimum":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeMinimum",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"11RuntimeAdditional":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeAdditional",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"12e46eca4f393b40df9f49076faf788d83":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\{e46eca4f-393b-40df-9f49-076faf788d83}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"13MicrosoftVSVCRuntimeMinimumVSUamd64v14":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_amd64,v14",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"14MicrosoftVSVCRuntimeAdditionalVSUamd64v14":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_amd64,v14",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"1551E9E3D0A7EDB003691F4BFA219B4688":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Features\\51E9E3D0A7EDB003691F4BFA219B4688",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"162DB859CBCAD52683BBA11CEB700934D8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Features\\2DB859CBCAD52683BBA11CEB700934D8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"1751E9E3D0A7EDB003691F4BFA219B4688":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"18SourceList":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\SourceList",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"19Net":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\SourceList\\Net",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"20DiskPrompt1":{
+					"Location": "\"DiskPrompt\"=\"1\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"212DB859CBCAD52683BBA11CEB700934D8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"22SourceList":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\SourceList",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"23Net":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\SourceList\\Net",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"24DiskPrompt1":{
+					"Location": "\"DiskPrompt\"=\"1\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"2509A86F63C932FD435BC8463B1035EC53":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\UpgradeCodes\\09A86F63C932FD435BC8463B1035EC53",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"2688AAB0B9F51EF1A3CA0C2B609EDD7FC1":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\UpgradeCodes\\88AAB0B9F51EF1A3CA0C2B609EDD7FC1",
+					"Layer": 4,
+					"Recurse": false
+				},
+
+				"12EED90641F56532378569CE865DC51E4":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\2EED90641F56532378569CE865DC51E4",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"2ECAE1C3074E724137A7E3F56800DB21D":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\ECAE1C3074E724137A7E3F56800DB21D",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"3DF85233BC05724B3B84E35B5849ED74B":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\DF85233BC05724B3B84E35B5849ED74B",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"427942822A4C04B13EAFEF97C95F63150":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\27942822A4C04B13EAFEF97C95F63150",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"52D1C5B53B5BE965338BE873EF4C52345":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\2D1C5B53B5BE965338BE873EF4C52345",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"6FD7D722D8F9DFA339B53B42F4FF7E24A":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\FD7D722D8F9DFA339B53B42F4FF7E24A",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"7E9820507FCEB7C2398CD804C84E084B2":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\E9820507FCEB7C2398CD804C84E084B2",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"869D89E5FF7C37D7328F14EBB304D83B4":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\69D89E5FF7C37D7328F14EBB304D83B4",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"967A3D0AE64EA64F39BD403D905791A52":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\67A3D0AE64EA64F39BD403D905791A52",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"108FA62F832D375A43B93B38EC91002AEA":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\8FA62F832D375A43B93B38EC91002AEA",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"11303E1D40F0E81D63CBF12EE72E9091A8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\303E1D40F0E81D63CBF12EE72E9091A8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"121352F35FC2724F93C9B513B213B8195E":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\1352F35FC2724F93C9B513B213B8195E",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"137863FF1350CEB6A38AECDA8DB11F05E6":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\7863FF1350CEB6A38AECDA8DB11F05E6",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"149BAFB2A83A0BB7331B286DA9028A50F5":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\9BAFB2A83A0BB7331B286DA9028A50F5",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"153E229A99F84673C3A86E8732F213B7E1":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\3E229A99F84673C3A86E8732F213B7E1",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"1651AD4298368ED8830AB67E3A39A17DB7":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\51AD4298368ED8830AB67E3A39A17DB7",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"17141252235EB0EFA389942D18DC59D434":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\141252235EB0EFA389942D18DC59D434",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"18C2A122DAB65961F3F846CF39C8FB1D9C":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\C2A122DAB65961F3F846CF39C8FB1D9C",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"198888C9AC6EEC6D836AD433AD82762518":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\8888C9AC6EEC6D836AD433AD82762518",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"20585B296F66C15DB3CA1344E22412DE08":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\585B296F66C15DB3CA1344E22412DE08",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"218EE841F7F16E26436B4D1E14A1E85C9C":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\8EE841F7F16E26436B4D1E14A1E85C9C",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"221F33968699A98DC30A17B21EC1AEE599":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\1F33968699A98DC30A17B21EC1AEE599",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"235CE4A476237FD6C30ABF82D916696356":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\5CE4A476237FD6C30ABF82D916696356",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"2488AB88A3087226237A9AA7113DDEA988":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\88AB88A3087226237A9AA7113DDEA988",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"257DA003D8A249FDE3AA30D344A29F2980":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\7DA003D8A249FDE3AA30D344A29F2980",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"26BD994C15A7DB9E13AAAFD5803147B134":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\BD994C15A7DB9E13AAAFD5803147B134",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"27F1F22C6C2BEC6D132A9EF821A42824F8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\F1F22C6C2BEC6D132A9EF821A42824F8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"28D1620B12191585D3C9929B32B2726D61":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\D1620B12191585D3C9929B32B2726D61",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"29C72BD52213EE8FD34BBBCA55605C76A3":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\C72BD52213EE8FD34BBBCA55605C76A3",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"3092998CBAE1E91F035A6A6C58DBDD7B3E":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\92998CBAE1E91F035A6A6C58DBDD7B3E",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"31BB3240163111F293B8A04300001E0944":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Components\\BB3240163111F293B8A04300001E0944",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"32InstallProperties":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\InstallProperties",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"33VCRuntimeMinimum5zGS8a4nrjtUZ5AQ5bDfo3g8jHSXC7leaNZbv7GEE34pcJheFp3pT1inaRA5dH525IurZe1Cb6VlS4Ur4svp2jZLC41NhG1Jv1PxH3Sy5kHeL2":{
+					"Location": "\"VC_Runtime_Minimum\"=\"5zGS=8a_.4nrjtUZ%5+AQ@`5$bDfo3g+8jHSXC7leaNZb~(v&7G{EE34p!c.Jh*.eFp{3)pT1i_na^$R@A=5dH525Iu@,rZe1(C*b6Vl.S%4Ur4svp2=jZ{=+L.=C41N!hG1Jv1'P'&xH3Sy5k(}He)L}2@\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"34ServicingKeyl7tMmD8Rl6TZb0bpfA6H8w4uOhGk9vja69bVyUY5fOBkPchbHThrnwTc76s1OWkr":{
+					"Location": "\"Servicing_Key\"=\"}l%7tMm^D8Rl6TZ'b&+0bpfA6H@8w4uOhGk9vj-a69bV$yUY5fOBkPchbHT_hrnwTc7^6~=}s1OWkr\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"35Patches":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\Patches",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"36InstallProperties":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\InstallProperties",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"37VCRuntimeAdditional9WdJTGOV4yjYUHuUFrJpHY6nF71GJxelqlT6036kLbb43mO3v4RUz6YfQrq9bmUR8WmWWfsPriKjBJk6Po2xWQBp9xgCW77yMyr2OSMQycpPpZp4Eo29a3qiuIWIr9W7GwHGq1wYCyj4IQorK71IMSZgqUHHn6eK44ZMScguuSsfHUZZ58W4x988iumBHX4BYcdAX9UHrshV4VArMdV9ACoKYse7vwPhqrD":{
+					"Location": "\"VC_Runtime_Additional\"=\"9WdJT&GOV4y*!jYUHuUFrJpHY6n&F71G(J.xel,ql)T60!36kLbb$43mO3+v,4RUz6_.YfQrq_^9=bm_`$UR?8W{mWWfsPriK@--jBJk=6%P~-o2.xWQBp+9xgCW77yMyr2OS-MQ.ycpPpZ.p4'Eo29a?3qiu@IWIr,9W7GwHGq~1w@YCyj4IQorK71IMSZgq%UH)H*n6e^K44ZMS(cguuSsf*HUZZ^58W`4x98!8i%_um?B}HX&4.BYc%d-AX9UHrsh`V$4VA+{(rMd&V9ACo-KYse7v=wP.hqrD*\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"38ServicingKeyl7tMmD8Rl6TZb0SpNw7EoUUCKXj669bVyUY5fOBkPchbHTdx5gg3lRr4r":{
+					"Location": "\"Servicing_Key\"=\"}l%7tMm^D8Rl6TZ'b&+0'Sp&.$N$w7EoUUC@KXj669bV$yUY5fOBkPchbHT`dx5`g*g3l!~R`r!4r\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"39Patches":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\Patches",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"4009A86F63C932FD435BC8463B1035EC53":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UpgradeCodes\\09A86F63C932FD435BC8463B1035EC53",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"4188AAB0B9F51EF1A3CA0C2B609EDD7FC1":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UpgradeCodes\\88AAB0B9F51EF1A3CA0C2B609EDD7FC1",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"420D3E9E15DE7A300B96F1B4AF12B96488":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{0D3E9E15-DE7A-300B-96F1-B4AF12B96488}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"43BC958BD25DAC3862BB1AC1BE0790438D":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{BC958BD2-5DAC-3862-BB1A-C1BE0790438D}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"44140":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"45RuntimeMinimum":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeMinimum",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"46RuntimeAdditional":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeAdditional",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"47e46eca4f393b40df9f49076faf788d83":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{e46eca4f-393b-40df-9f49-076faf788d83}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"48SharedDlls":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\SharedDlls",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"49x64":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\x64",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"50140":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"51RuntimeMinimum":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeMinimum",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"52RuntimeAdditional":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\DevDiv\\vc\\Servicing\\14.0\\RuntimeAdditional",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"53e46eca4f393b40df9f49076faf788d83":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\{e46eca4f-393b-40df-9f49-076faf788d83}",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"54MicrosoftVSVCRuntimeMinimumVSUamd64v14":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_amd64,v14",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"55MicrosoftVSVCRuntimeAdditionalVSUamd64v14":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_amd64,v14",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"5651E9E3D0A7EDB003691F4BFA219B4688":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Features\\51E9E3D0A7EDB003691F4BFA219B4688",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"572DB859CBCAD52683BBA11CEB700934D8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Features\\2DB859CBCAD52683BBA11CEB700934D8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"5851E9E3D0A7EDB003691F4BFA219B4688":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"59SourceList":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\SourceList",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"60Net":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\51E9E3D0A7EDB003691F4BFA219B4688\\SourceList\\Net",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"61DiskPrompt1":{
+					"Location": "\"DiskPrompt\"=\"1\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"622DB859CBCAD52683BBA11CEB700934D8":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"63SourceList":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\SourceList",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"64Net":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\Products\\2DB859CBCAD52683BBA11CEB700934D8\\SourceList\\Net",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"65DiskPrompt1":{
+					"Location": "\"DiskPrompt\"=\"1\"",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"6609A86F63C932FD435BC8463B1035EC53":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\UpgradeCodes\\09A86F63C932FD435BC8463B1035EC53",
+					"Layer": 4,
+					"Recurse": false
+				},
+				"6788AAB0B9F51EF1A3CA0C2B609EDD7FC1":{
+					"Location": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Installer\\UpgradeCodes\\88AAB0B9F51EF1A3CA0C2B609EDD7FC1",
+					"Layer": 4,
+					"Recurse": false
+				}
+            },
+            "SandboxFileExclusions": [],
+            "SandboxRegistryExclusions": []
+        },
+        "SecurityOverrideSettings": {
+            "AllowAccessLayer4": {
+                "AllowReadAndCopy": true,
+                "Proccesses": []
+            },
+            "DenyAccessLayer3": []
+        },
+        "OutputSettings": {
+            "EncryptionMethod": "AES-256-Enhanced",
+            "CompressionMethod": "LZMA",
+            "OutputFileNameNoExt": "",
+            "FinalizeIntoSTP": true,
+            "OutputFolder": "c:\\NIP_software\\15vcredist_x64\\output\\"
+        }
+    }
